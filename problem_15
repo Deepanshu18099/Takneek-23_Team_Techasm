@@ -1,0 +1,60 @@
+Code for problem 1
+
+
+
+Pickup a passenger at your location
+[Passenger:] "Enter a 3-digit number"
+Get the passenger's input and store it as "number"
+Set "product" to 1
+Repeat while "number" is greater than 0:
+    Set "digit" to the remainder of "number" divided by 10
+    Set "product" to the product of "product" and "digit"
+    Set "number" to the integer division of "number" by 10
+End repeat
+[Passenger:] "The product of the digits is " + Convert "product" to text
+Drop off the passenger at their destination
+
+
+problem 2
+
+Pickup a passenger at your location
+[Passenger:] "Enter a non-negative integer"
+Get the passenger's input and store it as "number"
+Set "smallest" to 9
+Repeat while "number" is greater than 0:
+    Set "digit" to the remainder of "number" divided by 10
+    If "digit" is less than "smallest":
+        Set "smallest" to "digit"
+    Set "number" to the integer division of "number" by 10
+End repeat
+[Passenger:] "The smallest digit is " + Convert "smallest" to text
+Drop off the passenger at their destination
+
+
+problem 3
+Pickup a passenger at your location
+[Passenger:] "Enter a string"
+Get the passenger's input and store it as "string"
+Set "lowercase" to Lowercase of "string"
+[Passenger:] "The lowercase of the string is " + "lowercase"
+Drop off the passenger at their destination
+
+
+problem 4
+
+
+Pickup a passenger at your location
+[Passenger:] "Enter a non-negative integer"
+Get the passenger's input and store it as "number"
+Set "digits" to an empty list
+Repeat while "number" is greater than 0:
+    Set "digit" to the remainder of "number" divided by 10
+    Add "digit" to the beginning of "digits"
+    Set "number" to the integer division of "number" by 10
+End repeat
+Sort "digits" in ascending order
+Set "result" to ""
+Repeat with each "digit" in "digits":
+    Set "result" to "result" + Convert "digit" to text
+[Passenger:] "The digits sorted in ascending order are " + "result"
+Drop off the passenger at their destination
